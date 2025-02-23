@@ -1,0 +1,43 @@
+:host {
+  width: 100%;
+}
+
+.card {
+  background-color: #1e2235 !important;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+.tooltip-content {
+  padding: 0.5rem;
+  background: #2a2f44;
+  border-radius: 4px;
+}
+
+.tooltip-label {
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.tooltip-value {
+  color: #64b5f6;
+  font-weight: bold;
+}
+
+.btn-dark {
+  background-color: #2a2f44;
+  border: none;
+}
+
+.dropdown-menu-dark {
+  background-color: #2a2f44;
+}
+::ng-deep g.tick text {
+  fill: white !important; /* Change this to your desired color */
+  font-size: 14px; /* Adjust font size if needed */
+}

@@ -1,0 +1,52 @@
+<div class="deals-container p-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h5 class="text-white mb-0">Deals Details</h5>
+    <div class="dropdown">
+      <button
+        class="btn btn-dark dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+      >
+        {{ selectedMonth }}
+      </button>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Location</th>
+          <th>Date - Time</th>
+          <th>Piece</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let deal of deals">
+          <td>
+            <div class="d-flex align-items-center">
+              <img
+                [src]="deal.productImage"
+                class="product-image rounded-circle me-2"
+                alt="product"
+              />
+              <span>{{ deal.productName }}</span>
+            </div>
+          </td>
+          <td>{{ deal.location }}</td>
+          <td>{{ deal.dateTime }}</td>
+          <td>{{ deal.piece }}</td>
+          <td>${{ deal.amount.toFixed(3) }}</td>
+          <td>
+            <span [class]="'status-badge ' + deal.status.toLowerCase()">
+              {{ deal.status }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

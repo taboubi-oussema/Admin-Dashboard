@@ -1,0 +1,41 @@
+<div >
+  <div class="card text-white">
+    <div class="card-body" >
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title">Sales Details</h5>
+        <div class="dropdown">
+          <button
+            class="btn btn-dark dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            {{ selectedMonth }}
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li *ngFor="let month of months">
+              <a class="dropdown-item" (click)="selectMonth(month)">{{
+                month
+              }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="chart-container" style="height: 300px">
+        <ngx-charts-line-chart
+          [results]="salesData"
+          [scheme]="colorScheme"
+          [gradient]="false"
+          [xAxis]="true"
+          [yAxis]="true"
+          [showXAxisLabel]="false"
+          [showYAxisLabel]="false"
+          [xAxisTickFormatting]="xAxisFormat"
+          [yAxisTickFormatting]="yAxisFormat"
+          [curve]="curve"
+        >
+        </ngx-charts-line-chart>
+      </div>
+    </div>
+  </div>
+</div>

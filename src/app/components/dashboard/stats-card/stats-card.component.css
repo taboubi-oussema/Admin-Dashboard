@@ -1,0 +1,33 @@
+.card {
+  transition: all 0.3s ease;
+  width: 262px;
+  height: 161px;
+  border-radius: 18px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.bg-dark-subtle {
+  background-color: #1e2235 !important;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.text-success, .text-danger {
+  font-size: 0.875rem;
+}

@@ -1,0 +1,38 @@
+<div
+  class="sidebar text-light p-3"
+  style="width: 250px; min-height: 100vh; background-color: #273142"
+>
+  <!-- Logo -->
+  <div class="logo-container mb-4">
+    <img
+      src="../../../assets/Bright Web.png"
+      alt="DashStack Logo"
+      class="img-fluid"
+      style="max-width: 150px"
+    />
+  </div>
+
+  <!-- Navigation Items -->
+  <nav class="nav flex-column">
+    <ng-container *ngFor="let item of navigationItems">
+      <!-- Section Header -->
+      <div
+        *ngIf="item.isHeader"
+        class="nav-header text-muted small text-uppercase mt-3 mb-2"
+      >
+        {{ item.label }}
+      </div>
+
+      <!-- Navigation Link -->
+      <a
+        *ngIf="!item.isHeader"
+        [routerLink]="item.link"
+        routerLinkActive="active"
+        class="nav-link text-light mb-2"
+      >
+
+        {{ item.label }}
+      </a>
+    </ng-container>
+  </nav>
+</div>

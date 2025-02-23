@@ -1,0 +1,70 @@
+.deals-container {
+  background-color: #313d4f;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.table {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: #323D4E;
+  border-radius: 9px;
+
+
+}
+
+.table th {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-weight: normal;
+  padding: 1rem;
+}
+
+.table tbody {
+  background-color: #313D4F;
+}
+
+.table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.product-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+.status-badge.delivered {
+  background-color: #00B69B;
+  color: white;
+}
+
+.status-badge.pending {
+  background-color: #ffc107;
+  color: black;
+}
+
+.status-badge.cancelled {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.dropdown-menu-dark {
+  background-color: #313d4f;
+}
