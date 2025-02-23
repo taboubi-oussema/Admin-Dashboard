@@ -1,0 +1,57 @@
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <div
+    class="card"
+    style="
+      width: 18rem;
+      background-color: #313d4f;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+    "
+    *ngFor="let product of products"
+  >
+    <img [src]="product.image" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <div
+        style="display: flex; justify-content: space-between; align-items: center"
+      >
+        <h5 class="card-title" style="margin: 0">{{ product.name }}</h5>
+        <i
+          class="fa-regular fa-heart"
+          style="color: #ffffff; cursor: pointer"
+        ></i>
+      </div>
+      <p
+        class="card-text"
+        style="
+          font-size: 1.2rem;
+          color: #4caf50;
+          font-weight: bold;
+          margin: 5px 0;
+        "
+      >
+        ${{ product.price.toFixed(2) }}
+      </p>
+      <div
+        style="display: flex; align-items: center; gap: 4px; margin-bottom: 10px"
+      >
+        <div class="stars">
+          <i class="fa-solid fa-star" *ngFor="let star of [1, 2, 3, 4, 5]"></i>
+        </div>
+        <span style="color: #6c757d; font-size: 14px;">({{ product.reviews }})</span>
+      </div>
+      <a
+        href="#"
+        class="btn btn-primary"
+        style="
+          background-color: #4b5668;
+          border-radius: 8px;
+          color: white;
+          border: none;
+          width: 100%;
+        "
+        >Edit Product</a
+      >
+    </div>
+  </div>
+</div>

@@ -10,6 +10,7 @@ import { StatsCardComponent } from './components/dashboard/stats-card/stats-card
 import { SalesChartComponent } from './components/dashboard/sales-chart/sales-chart.component';
 import { DealsTableComponent } from './components/dashboard/deals-table/deals-table.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { ProductsComponent } from './components/products/products.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     StatsCardComponent,
     SalesChartComponent,
     DealsTableComponent,
+    ProductsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxChartsModule],
   providers: [],

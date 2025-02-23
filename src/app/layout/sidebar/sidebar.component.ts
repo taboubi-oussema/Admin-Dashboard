@@ -17,8 +17,7 @@ export class SidebarComponent {
   navigationItems: NavItem[] = [
     { label: 'Dashboard', link: '/dashboard' },
     { label: 'Products', link: '/products' },
-    { label: 'Favorites', link: '/favorites' },
-    { label: 'Inbox', link: '/inbox' },
+
     { label: 'Order Lists', link: '/orders' },
     { label: 'Product Stock', link: '/stock' },
 
