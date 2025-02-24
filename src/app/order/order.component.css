@@ -1,0 +1,25 @@
+/* order.component.scss */
+:host {
+  display: block;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+th {
+  font-weight: 500;
+  border: none;
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.badge {
+  font-weight: normal;
+}
+
+

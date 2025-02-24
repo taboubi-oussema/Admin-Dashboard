@@ -11,6 +11,9 @@ import { SalesChartComponent } from './components/dashboard/sales-chart/sales-ch
 import { DealsTableComponent } from './components/dashboard/deals-table/deals-table.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { ProductsComponent } from './components/products/products.component';
+import { OrderComponent } from './order/order.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { StockComponent } from './stock/stock.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,9 @@ import { ProductsComponent } from './components/products/products.component';
     SalesChartComponent,
     DealsTableComponent,
     ProductsComponent,
+    OrderComponent,
+    PricingComponent,
+    StockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxChartsModule],
   providers: [],

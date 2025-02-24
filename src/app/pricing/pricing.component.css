@@ -1,0 +1,61 @@
+/* pricing.component.scss */
+.pricing-card {
+  background-color: #232d3f;
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4A8CFF !important;
+}
+
+.features {
+  margin: 2rem 0;
+}
+
+.feature-item {
+  padding: 0.75rem 0;
+  font-size: 0.9rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #4A8CFF;
+  border-color: #4A8CFF;
+
+  &:hover {
+    background-color: darken(#4A8CFF, 10%);
+    border-color: darken(#4A8CFF, 10%);
+  }
+}
+
+.btn-outline-primary {
+  color: #4A8CFF;
+  border-color: #4A8CFF;
+
+  &:hover {
+    background-color: #4A8CFF;
+    color: white;
+  }
+}
+
+.text-primary {
+  color: #4A8CFF !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
