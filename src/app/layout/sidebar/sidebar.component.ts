@@ -23,12 +23,7 @@ export class SidebarComponent {
 
     { label: 'PAGES', isHeader: true },
     { label: 'Pricing', link: '/pricing' },
-    { label: 'Calendar', link: '/calendar' },
-    { label: 'To-Do', link: '/todo' },
-    { label: 'Contact', link: '/contact' },
-    { label: 'Invoice', link: '/invoice' },
-    { label: 'UI Elements', link: '/ui-elements' },
-    { label: 'Team', link: '/team' },
+
     { label: 'Table', link: '/table' },
 
     { label: 'Settings', link: '/settings' },
